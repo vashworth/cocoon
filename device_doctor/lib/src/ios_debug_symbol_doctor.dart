@@ -57,7 +57,7 @@ class DiagnoseCommand extends Command<bool> {
 
   /// Log the status of DevToolsSecurity.
   Future<void> checkDevToolsSecurity() async {
-    final List<String> command = <String>['xcrun', 'DevToolsSecurity', '--status'];
+    final List<String> command = <String>['xcrun', 'DevToolsSecurity', '--status',  '--verbose'];
     final io.ProcessResult result = await processManager.run(
       command,
     );

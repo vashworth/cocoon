@@ -86,7 +86,7 @@ Future<void> main() async {
         return ProcessResult(0, 0, _jsonWithNonFatalErrors, '');
       });
       when(
-        processManager.run(<String>['xcrun', 'DevToolsSecurity', '--status']),
+        processManager.run(<String>['xcrun', 'DevToolsSecurity', '--status', '--verbose']),
       ).thenAnswer((_) async {
         return ProcessResult(0, 0, _developerModeDisabled, '');
       });
@@ -113,7 +113,7 @@ Future<void> main() async {
         );
       });
       when(
-        processManager.run(<String>['xcrun', 'DevToolsSecurity', '--status']),
+        processManager.run(<String>['xcrun', 'DevToolsSecurity', '--status', '--verbose']),
       ).thenAnswer((_) async {
         return ProcessResult(0, 0, _developerModeEnabled, '');
       });
