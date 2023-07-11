@@ -3,10 +3,15 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:ci_issue_detector/ci_issue_detector.dart';
 
 void main() {
-  test('adds one to input values', () {
-    final calculator = Calculator();
-    expect(calculator.addOne(2), 3);
-    expect(calculator.addOne(-7), -6);
-    expect(calculator.addOne(0), 1);
+  // TODO
+  // Test to ensure all decectors have a unique identifer
+  // Test to ensure getAllDetectors return all
+  // Test to ensure name is not empty
+  // Test to ensure owner is not empty and valid
+  // only one analyzer per file
+  // Test each MetadataType works with getByJsonValue
+  // Test each MetadataType jsonValue is unique
+
+  test('', () async {
   });
 }
